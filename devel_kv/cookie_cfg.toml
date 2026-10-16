@@ -1,0 +1,22 @@
+[cookie_secret_keys]
+art_items = "dummydummydummydummy"
+yt_items = "dummydummydummydummy"
+
+[cookie_defaults]
+max_age = 1209600
+path = "/"
+same_site = "lax"
+https_only = true
+secure = false
+domain = ""
+
+# --- per cookie configuration ---
+[cookies.art_items]
+state_attr_name = "art_items"
+cookie_ttl = 1209600
+initial_value = { items = [], total = 0 }
+
+[cookies.yt_items]
+state_attr_name = "yt_items"
+cookie_ttl = 1209600
+initial_value = { items = [], total = 0 }
