@@ -5,10 +5,7 @@ def send_verification_link(appstate, arg_user):
 
     arg: new user instance. 
     """
-    print ("called send_verification_link")
-    print (appstate)
-    print (arg_user)
-    print (arg_user.email)
+
     relative_link = token_manager.generate_relative_link(arg_user, arg_user.email)
     print (relative_link)
 

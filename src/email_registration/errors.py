@@ -1,11 +1,11 @@
-class UserAlreadyActive(Exception):
-    def __init__(self, *args: object) -> None:
-        super().__init__(*args)
+# class UserAlreadyActive(Exception):
+#     def __init__(self, *args: object) -> None:
+#         super().__init__(*args)
 
 
-class MaxRetriesExceeded(Exception):
-    def __init__(self, *args: object) -> None:
-        super().__init__(*args)
+# class MaxRetriesExceeded(Exception):
+#     def __init__(self, *args: object) -> None:
+#         super().__init__(*args)
 
 
 class UserNotFound(Exception):
@@ -13,9 +13,9 @@ class UserNotFound(Exception):
         super().__init__(*args)
 
 
-class InvalidToken(Exception):
-    def __init__(self, *args: object) -> None:
-        super().__init__(*args)
+# class InvalidToken(Exception):
+#     def __init__(self, *args: object) -> None:
+#         super().__init__(*args)
 
 
 class InvalidTokenOrEmail(Exception):
@@ -26,3 +26,12 @@ class InvalidTokenOrEmail(Exception):
 class WrongTimeInterval(Exception):
     def __init__(self, *args: object) -> None:
         super().__init__(*args)
+
+        pass
+    pass
+
+class SignatureExpired(Exception): pass
+class BadSignature(Exception): pass
+class MaxRetriesExceeded(Exception): pass
+class UserAlreadyActive(Exception): pass
+class InvalidToken(Exception): pass
